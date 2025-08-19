@@ -1,0 +1,224 @@
+/* all */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* header */
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 50px; background: #0d1b2a; color: white;
+}
+
+/* Navbar */
+.logo { font-size: 30px; font-weight: bold; }
+.logo img  {width: 30px; height: auto;}
+.logo span { font-size: 12px; color: #ecc834; }
+.btn { background: #ffcc00; padding: 10px 20px; border-radius: 5px; text-decoration: none; color: #000; font-weight: bold; }
+.btn-outline { margin-left: 10px; color: white;}
+.navbar {
+  background: transparent;
+  padding: 20px 10%;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 5px;
+  display: block;
+}
+
+.menu a:hover {
+  color: #ffcc00;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0b1a2c;
+  padding: 10px 0;
+  min-width: 180px;
+  list-style: none;
+  display: none;
+  z-index: 10;
+}
+
+.dropdown-menu li a {
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10%;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(13,27,42,0.6); /* dark overlay */
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content .tagline {
+  font-size: 14px;
+  color: #ffcc00;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #ddd;
+}
+
+
+/* SERVICES */
+.services { padding: 60px 40px; text-align: center; background: #f8f9fa; }
+.services h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #0d1b2a;
+}
+.services span {font-size: 12px; color: #ffcc00;}
+.service-box { display: flex; justify-content: space-between; flex-wrap: wrap; margin: 50px; gap: 20px; }
+.service {  flex: 1 1 200px; background: white; padding: 50px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.service img { width: 80px; height: 80px; }
+.service a{ color: black; text-decoration: none;}
+
+
+
+
+/* FOOTER */
+
+.footer {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 50px 40px 20px;
+  font-size: 14px;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer-col ul li a:hover {
+  color: #ffcc00;
+}
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+.social-links a:hover {
+  color: #ffcc00;
+}
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.news-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.news-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.news-item a:hover {
+  color: #ffcc00;
+}
+.footer-col form {
+  display: flex;
+  flex-direction: column;
+}
+.footer-col input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.footer-col button {
+  background: #ffcc00;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.footer-col button:hover {
+  background: #e6b800;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 15px;
+  text-align: center;
+}
