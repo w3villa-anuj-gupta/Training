@@ -12,61 +12,78 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="logo"><img src="logo/company.png" alt="Company">Advisor <span>Bigger. Better</span></div>
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
+        <div class="container">
+            <div class="logo">
+                <div>
+                    <img src="logo/company.png" alt="Company">Advisor 
+                    <span>Bigger. Better</span>
+                </div>
+            </div>
 
-                <li class="dropdown">
-                    <a href="#">Pages ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </li>
+            <!-- Mobile toggle (checkbox hack) -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
 
-                <li class="dropdown">
-                    <a href="#">Services ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Consulting</a></li>
-                        <li><a href="#">Finance</a></li>
-                        <li><a href="#">Market Research</a></li>
-                    </ul>
-                </li>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
 
-                <li class="dropdown">
-                    <a href="#">Projects ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Completed</a></li>
-                        <li><a href="#">Ongoing</a></li>
-                    </ul>
-                </li>
+                    <li class="dropdown">
+                        <a href="#">Pages ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
 
-                <li class="dropdown">
-                    <a href="#">Blog ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Latest Posts</a></li>
-                        <li><a href="#">Categories</a></li>
-                    </ul>
-                </li>
+                    <li class="dropdown">
+                        <a href="#">Services ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Consulting</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Market Research</a></li>
+                        </ul>
+                    </li>
 
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn">Free Quote</a>
+                    <li class="dropdown">
+                        <a href="#">Projects ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Completed</a></li>
+                            <li><a href="#">Ongoing</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Blog ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Latest Posts</a></li>
+                            <li><a href="#">Categories</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">Free Quote</a>
+        </div>
     </header>
 
     <!-- HERO -->
     <section class="hero">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <span class="tagline">● BUSINESS MAKE EASY</span>
-            <h1>Reliably guiding your business to success</h1>
-            <p>Take your business to the next level with our sales agency for business success management toolkits.</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn">Discover More</a>
-                <a href="#" class="btn-outline">Get a Quote</a>
+        <div class="container">
+            <div class="hero-content">
+                <span class="tagline">● BUSINESS MAKE EASY</span>
+                <h1>Reliably guiding your business to success</h1>
+                <p>Take your business to the next level with our sales agency for business success management toolkits.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Discover More</a>
+                    <a href="#" class="btn-outline">Get a Quote</a>
+                </div>
             </div>
         </div>
     </section>
@@ -76,84 +93,88 @@
 
     <!-- SERVICES -->
     <section class="services">
-        <span>OUR DEDICATED SERVICES</span>
-        <h1>Service We Provide</h1>
-        <div class="service-box">
-            <div class="service">
-                <img src="logo/planning.png" alt="Strategic Planning">
-                <h3>Strategic Planning</h3>
-                <p>We provide business planning & strategy to improve operations.</p>
-                <br>
-                <hr>
-                <br>
-                <a href="#">Read More</a>
+        <div class="container">
+            <span>OUR DEDICATED SERVICES</span>
+            <h1>Service We Provide</h1>
+            <div class="service-box">
+                <div class="service">
+                    <img src="logo/planning.png" alt="Strategic Planning">
+                    <h3>Strategic Planning</h3>
+                    <p>We provide business planning & strategy to improve operations.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="service">
+                    <img src="logo/marketing.png" alt="Strategic Planning">
+                    <h3>Market Analysis</h3>
+                    <p>In-depth research and analysis for business growth and expansion.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="service">
+                    <img src="logo/finance.png" alt="Strategic Planning">
+                    <h3>Finance Planning</h3>
+                    <p>Helping businesses manage their finances effectively with insights.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="service">
+                    <img src="logo/investment.png" alt="Strategic Planning">
+                    <h3>Investment Ideas</h3>
+                    <p>Innovative investment strategies to maximize business potential.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="#">Read More</a>
+                </div>
             </div>
-            <div class="service">
-                <img src="logo/marketing.png" alt="Strategic Planning">
-                <h3>Market Analysis</h3>
-                <p>In-depth research and analysis for business growth and expansion.</p>
-                <br>
-                <hr>
-                <br>
-                <a href="#">Read More</a>
+            <div class="process"><img src="logo/process.png" alt="">
+                <p>We'are committed to create a change that matters!</p>
             </div>
-            <div class="service">
-                <img src="logo/finance.png" alt="Strategic Planning">
-                <h3>Finance Planning</h3>
-                <p>Helping businesses manage their finances effectively with insights.</p>
-                <br>
-                <hr>
-                <br>
-                <a href="#">Read More</a>
-            </div>
-            <div class="service">
-                <img src="logo/investment.png" alt="Strategic Planning">
-                <h3>Investment Ideas</h3>
-                <p>Innovative investment strategies to maximize business potential.</p>
-                <br>
-                <hr>
-                <br>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-        <div class="process"><img src="logo/process.png" alt="">
-            <p>We'are committed to create a change that matters!</p>
         </div>
     </section>
 
 
     <!-- ABOUT -->
     <section class="about">
-        <div class="image-content">
-            <img src="images/about_1.jpg" alt="Business Meeting">
-            <div class="trust-box">
-                Trusted by <br>
-                <p>75k</p>
-            </div>
-        </div>
-
-        <!-- Right Side (Text + Features) -->
-        <div class="text-content">
-            <h5>ABOUT US</h5>
-            <h2>The essential steps for business success</h2>
-            <p>Our objective is to offer a high-quality service and a dependable source of income for investors
-                while simultaneously minimizing any potential risks and automating and simplifying the investing
-                process.</p>
-
-            <div class="features">
-                <div class="feature">
-                    <img src="images/business_innovation.jpg" alt="Business Innovation">
-                    <div>
-                        <h4>Business Innovation</h4>
-                        <span>Best working</span>
-                    </div>
+        <div class="container">
+            <div class="image-content">
+                <img src="images/about_1.jpg" alt="Business Meeting">
+                <div class="trust-box">
+                    Trusted by <br>
+                    <p>75k</p>
                 </div>
+            </div>
 
-                <div class="feature">
-                    <img src="images/marketing_solutions.jpg" alt="Marketing Solution">
-                    <div>
-                        <h4>Marketing Solution</h4>
-                        <span>Best working</span>
+            <!-- Right Side (Text + Features) -->
+            <div class="text-content">
+                <h5>ABOUT US</h5>
+                <h2>The essential steps for business success</h2>
+                <p>Our objective is to offer a high-quality service and a dependable source of income for investors
+                    while simultaneously minimizing any potential risks and automating and simplifying the investing
+                    process.</p>
+
+                <div class="features">
+                    <div class="feature">
+                        <img src="images/business_innovation.jpg" alt="Business Innovation">
+                        <div>
+                            <h4>Business Innovation</h4>
+                            <span>Best working</span>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <img src="images/marketing_solutions.jpg" alt="Marketing Solution">
+                        <div>
+                            <h4>Marketing Solution</h4>
+                            <span>Best working</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,61 +184,88 @@
     <!-- Experience  -->
 
     <section class="experience">
-        <h2>Offering the best experience of <br> business consulting</h2>
-        <div >
-           <a href="#">Discover More Info</a> 
+        <div class="container">
+            <h2>Offering the best experience of <br> business consulting</h2>
+            <div>
+                <a href="#">Discover More Info</a>
+            </div>
         </div>
-        
     </section>
 
+    <!-- Stats  -->
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-box">
+                <div class="stat">
+                    <h3>25+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat">
+                    <h3>23k+</h3>
+                    <p>Project Completed</p>
+                </div>
+                <div class="stat">
+                    <h3>226+</h3>
+                    <p>Consultation</p>
+                </div>
+                <div class="stat">
+                    <h3>958+</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Team Section -->
     <section class="team-section">
-        <p class="team-subtitle">MEET OUR TEAM</p>
-        <h2 class="team-title">Our Specialized Team</h2>
+        <div class="container">
+            <p class="team-subtitle">MEET OUR TEAM</p>
+            <h2 class="team-title">Our Specialized Team</h2>
 
-        <div class="team-container">
-            <div class="team-member">
-                <img src="images/amy_jenkins.jpg" alt="Amy Jonker">
-                <h3>Amy Jonker</h3>
-                <p>Financial Analyst</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="images/amy_jenkins.jpg" alt="Amy Jonker">
+                    <h3>Amy Jonker</h3>
+                    <p>Financial Analyst</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="team-member">
-                <img src="images/jeffery_mueller.jpg" alt="Jeffry Mosher">
-                <h3>Jeffry Mosher</h3>
-                <p>Marketing Analyst</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="team-member">
+                    <img src="images/jeffery_mueller.jpg" alt="Jeffry Mosher">
+                    <h3>Jeffry Mosher</h3>
+                    <p>Marketing Analyst</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="team-member">
-                <img src="images/anne_arias.jpg" alt="Anne Adea">
-                <h3>Anne Adea</h3>
-                <p>Statistical Analyst</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="team-member">
+                    <img src="images/anne_arias.jpg" alt="Anne Adea">
+                    <h3>Anne Adea</h3>
+                    <p>Statistical Analyst</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="team-member">
-                <img src="images/gerald_ruggiero.jpg" alt="Gerold Baggio">
-                <h3>Gerold Baggio</h3>
-                <p>Business Consultant</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="team-member">
+                    <img src="images/gerald_ruggiero.jpg" alt="Gerold Baggio">
+                    <h3>Gerold Baggio</h3>
+                    <p>Business Consultant</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -225,152 +273,197 @@
 
     <!-- Textimonials -->
     <section class="testimonials">
-        <p class="testimonials-subtitle">★ Testimonials</p>
-        <h2 class="testimonials-title">Reviews of Our Clients</h2>
+        <div class="container">
+            <p class="testimonials-subtitle">★ Testimonials</p>
+            <h2 class="testimonials-title">Reviews of Our Clients</h2>
 
-        <div class="testimonial-box">
-            <span class="quote-icon">❝</span>
-            <p class="testimonial-text">
-                "Business consulting has really helped our business. Definitely worth the
-                investment. Business consulting has made a huge difference! It has saved me
-                so much time."
-            </p>
-            <h3 class="client-name">Lizabeth G. Mack</h3>
-            <p class="client-role">– Marketing Lead</p>
+            <div class="testimonial-box">
+                <span class="quote-icon">❝</span>
+                <p class="testimonial-text">
+                    "Business consulting has really helped our business. Definitely worth the
+                    investment. Business consulting has made a huge difference! It has saved me
+                    so much time."
+                </p>
+                <h3 class="client-name">Lizabeth G. Mack</h3>
+                <p class="client-role">– Marketing Lead</p>
+            </div>
         </div>
-
-
     </section>
 
 
     <!-- Presentation  -->
 
     <section class="presentation">
-        <div class="heading">
-            <h2>
-                Whether you are looking for <br>
-                answers, would like to solve a <br>
-                any business problem
-            </h2>
-        </div>
-
-        <div class="video">
-            <div class="video-play-btn">
-                <span class="play-icon">▶</span>
+        <div class="container">
+            <div class="heading">
+                <h2>
+                    Whether you are looking for <br>
+                    answers, would like to solve a <br>
+                    any business problem
+                </h2>
             </div>
 
-        </div>
-        <div class="presentation-text">
-            <p>Video Presentation</p>
+            <div class="video">
+                <div class="video-play-btn">
+                    <span class="play-icon">▶</span>
+                </div>
+
+            </div>
+            <div class="presentation-text">
+                <p>Video Presentation</p>
+            </div>
         </div>
     </section>
 
     <!-- News  -->
 
     <section class="news">
-        <p class="news-subtitle">★ Lastest News</p>
-        <h2 class="news-title">News & Articles</h2>
+        <div class="container">
+            <p class="news-subtitle">★ Lastest News</p>
+            <h2 class="news-title">News & Articles</h2>
 
-        <div class="news-container">
+            <div class="news-container">
 
-            <!-- Blog Card 1 -->
-            <div class="news-card">
-                <img src="images/blog_1.jpg" alt="Blog 1">
-                <div class="date-badge">
-                    <span>09</span>
-                    <small>Nov</small>
+                <!-- Blog Card 1 -->
+                <div class="news-card">
+                    <img src="images/blog_1.jpg" alt="Blog 1">
+                    <div class="date-badge">
+                        <span>09</span>
+                        <small>Nov</small>
+                    </div>
+                    <div class="news-content">
+                        <p class="meta">Analytics · 13 Comments</p>
+                        <h3>Customer onboarding there business classes.</h3>
+                    </div>
                 </div>
-                <div class="news-content">
-                    <p class="meta">Analytics · 13 Comments</p>
-                    <h3>Customer onboarding there business classes.</h3>
+
+                <!-- Blog Card 2 -->
+                <div class="news-card">
+                    <img src="images/blog_2.jpg" alt="Blog 2">
+                    <div class="date-badge">
+                        <span>04</span>
+                        <small>Nov</small>
+                    </div>
+                    <div class="news-content">
+                        <p class="meta">Finance · 08 Comments</p>
+                        <h3>How investing in depended increasing to business</h3>
+                    </div>
                 </div>
+
+                <!-- Blog Card 3 -->
+                <div class="news-card">
+                    <img src="images/blog_3.jpg" alt="Blog 3">
+                    <div class="date-badge">
+                        <span>30</span>
+                        <small>Oct</small>
+                    </div>
+                    <div class="news-content">
+                        <p class="meta">Consultation · 01 Comments</p>
+                        <h3>7 Productivity tips to avoid burnout when working</h3>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Blog Card 2 -->
-            <div class="news-card">
-                <img src="images/blog_2.jpg" alt="Blog 2">
-                <div class="date-badge">
-                    <span>04</span>
-                    <small>Nov</small>
-                </div>
-                <div class="news-content">
-                    <p class="meta">Finance · 08 Comments</p>
-                    <h3>How investing in depended increasing to business</h3>
-                </div>
+            <div class="btn-wrapper">
+                <a href="#" class="btn">View All Blog</a>
             </div>
-
-            <!-- Blog Card 3 -->
-            <div class="news-card">
-                <img src="images/blog_3.jpg" alt="Blog 3">
-                <div class="date-badge">
-                    <span>30</span>
-                    <small>Oct</small>
-                </div>
-                <div class="news-content">
-                    <p class="meta">Consultation · 01 Comments</p>
-                    <h3>7 Productivity tips to avoid burnout when working</h3>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="btn-wrapper">
-            <a href="#" class="btn">View All Blog</a>
         </div>
     </section>
 
+    <!-- Info  -->
+    <section class="info">
+        <div class="container">
+            <div class="topbar">
+                <!-- Logo -->
+                <div class="name">
+                    <img src="logo/company.png" alt="Company">
+                    <div>    
+                        <h2>ADVISOR</h2>
+                        <span>Broker . Mentor</span>
+                    </div>
+                </div>
+
+                <div class="info-items">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            76 Newtown Street 54231, Chennai <br>
+                            North Town S MRT.
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            +44 123 456 789 <br>
+                            +11 2525 - 545 - 9997
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            advisor@email <br>
+                            info@yourdomain
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-top">
+        <div class="container">
+            <div class="footer-top">
 
-            <div class="footer-col">
-                <h3>ABOUT US</h3>
-                <p>We have 25+ years experience. Helping you overcome business challenges.</p>
-                <br>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                <div class="footer-col">
+                    <h3>ABOUT US</h3>
+                    <p>We have 25+ years experience. Helping you overcome business challenges.</p>
+                    <br>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li><a href="#">Strategic Planning</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                        <li><a href="#">Finance Planning</a></li>
+                        <li><a href="#">Investment Idea</a></li>
+                        <li><a href="#">Digital Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>RECENT NEWS</h3>
+                    <div class="news-item">
+                        <img src="images/recent_news_1.jpg" alt="">
+                        <p><a href="#">People saying about business.</a><br><small>8 Jan, 2024</small></p>
+                    </div>
+                    <div class="news-item">
+                        <img src="images/recent_news_2.jpg" alt="">
+                        <p><a href="#">Providing all types of business</a><br><small>3 Jan, 2024</small></p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>NEWSLETTER</h3>
+                    <p>Subscribe to our newsletter for discounts and more.</p>
+                    <form>
+                        <input type="email" placeholder="Subscribe with us">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
                 </div>
             </div>
 
-            <div class="footer-col">
-                <h3>SERVICES</h3>
-                <ul>
-                    <li><a href="#">Strategic Planning</a></li>
-                    <li><a href="#">Market Analysis</a></li>
-                    <li><a href="#">Finance Planning</a></li>
-                    <li><a href="#">Investment Idea</a></li>
-                    <li><a href="#">Digital Solutions</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>© 2025 Advisor | Powered by Advisor</p>
             </div>
-
-            <div class="footer-col">
-                <h3>RECENT NEWS</h3>
-                <div class="news-item">
-                    <img src="images/recent_news_1.jpg" alt="">
-                    <p><a href="#">People saying about business.</a><br><small>8 Jan, 2024</small></p>
-                </div>
-                <div class="news-item">
-                    <img src="images/recent_news_2.jpg" alt="">
-                    <p><a href="#">Providing all types of business</a><br><small>3 Jan, 2024</small></p>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <h3>NEWSLETTER</h3>
-                <p>Subscribe to our newsletter for discounts and more.</p>
-                <form>
-                    <input type="email" placeholder="Subscribe with us">
-                    <button type="submit">SUBSCRIBE</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2025 Advisor | Powered by Advisor</p>
         </div>
     </footer>
 
