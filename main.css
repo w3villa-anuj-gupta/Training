@@ -64,7 +64,7 @@ body {
 }
 
 .btn-outline {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   color: white;
   background: transparent;
   border: 2px solid #ffcc00;
@@ -261,20 +261,30 @@ body {
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.hero-arrow:hover {
+  background: #ffcc00;
+  color: #0d1b2a;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .hero-arrow-left {
-  left: 30px;
+  left: 50px;
 }
 
 .hero-arrow-right {
-  right: 30px;
+  right: 50px;
 }
 
 .hero-content {
   position: relative;
   max-width: 600px;
   z-index: 2;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .hero-buttons {
@@ -1107,6 +1117,8 @@ body {
   .hero-content {
     max-width: 100%;
     text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   
   .hero-arrow {
@@ -1116,11 +1128,11 @@ body {
   }
   
   .hero-arrow-left {
-    left: 20px;
+    left: 30px;
   }
   
   .hero-arrow-right {
-    right: 20px;
+    right: 30px;
   }
   
   /* Services Section */
@@ -1345,6 +1357,7 @@ body {
   .hero {
     height: 80vh;
   }
+
   
   .hero h1 {
     font-size: 28px;
@@ -1400,11 +1413,11 @@ body {
   }
   
   .hero-arrow-left {
-    left: 15px;
+    left: 25px;
   }
   
   .hero-arrow-right {
-    right: 15px;
+    right: 25px;
   }
   
   /* Services Section */
