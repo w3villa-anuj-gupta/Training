@@ -121,9 +121,69 @@ body {
   color: #000;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
+/* Dropdown functionality using checkbox hack */
+
+/* Hide dropdown checkboxes */
+.dropdown-checkbox {
+  display: none;
+}
+
+/* Style dropdown toggle labels to look like regular links */
+.dropdown-toggle {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 5px;
   display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-toggle:hover {
+  color: #ffcc00;
+}
+
+/* Desktop: Show dropdown on hover */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Hide checkbox-based dropdowns on desktop */
+  .dropdown-checkbox:checked ~ .dropdown-menu {
+    display: none;
+  }
+}
+
+/* Mobile: Show dropdown when checkbox is checked */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    display: none;
+    position: static;
+    background: rgba(255,255,255,0.05);
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: none;
+    border: none;
+  }
+  
+  /* Show dropdown when checkbox is checked */
+  .dropdown-checkbox:checked ~ .dropdown-menu {
+    display: block;
+  }
+  
+  /* Style the dropdown toggle label */
+  .dropdown-toggle {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .dropdown-toggle:hover {
+    color: #ffcc00;
+  }
 }
 
 /* Mobile Menu */
@@ -524,7 +584,7 @@ body {
   border-color: #007bff;
 }
 
-/* textimonials */
+/* text testimonials */
 .testimonials {
   padding: 100px 0;
   background: #f2f7fa;
@@ -899,4 +959,522 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 15px;
   text-align: center;
+}
+
+/* Responsive Design for Phone and Tablet */
+
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+  /* Header */
+  .header .container {
+    padding: 15px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .logo img {
+    width: 25px;
+  }
+  
+  .logo span {
+    font-size: 10px;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0d1b2a;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+  
+  /* Ensure navbar shows when checkbox is checked */
+  .menu-checkbox:checked ~ .navbar {
+    display: flex !important;
+  }
+  
+  /* Alternative selector for better compatibility */
+  #menu-toggle:checked ~ .navbar {
+    display: flex !important;
+  }
+  
+  .menu {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 20px;
+  }
+  
+  .menu li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu a {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+  
+  /* Dropdown styles for tablet - controlled by checkbox hack */
+  .dropdown-menu {
+    position: static;
+    background: rgba(255,255,255,0.05);
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+  
+  .dropdown-menu li {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  /* Style dropdown toggle labels */
+  .dropdown-toggle {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .btn {
+    display: none;
+  }
+  
+  /* Hero Section */
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .hero-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+  
+  .hero-arrow-left {
+    left: 20px;
+  }
+  
+  .hero-arrow-right {
+    right: 20px;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 40px 0;
+  }
+  
+  .services h1 {
+    font-size: 28px;
+  }
+  
+  .service-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .service {
+    flex: 1 1 auto;
+    padding: 30px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 0;
+  }
+  
+  .about .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .about img {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .trust-box {
+    position: static;
+    margin: 20px auto;
+    max-width: 200px;
+  }
+  
+  /* Experience Section */
+  .experience {
+    padding: 60px 0 100px 0;
+  }
+  
+  .experience .container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .experience h2 {
+    font-size: 28px;
+  }
+  
+  /* Stats Box */
+  .stats-box {
+    top: -50px;
+    margin: 0 20px;
+    padding: 20px;
+  }
+  
+  .stat {
+    min-width: 120px;
+    margin: 10px;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 0 40px 60px;
+  }
+  
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .team-member {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    padding: 60px 0;
+  }
+  
+  .testimonial-box {
+    margin: 0 20px 30px;
+  }
+  
+  /* Presentation */
+  .presentation {
+    padding: 40px 0;
+  }
+  
+  .presentation .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .presentation h2 {
+    font-size: 24px;
+  }
+  
+  /* News Section */
+  .news {
+    padding: 60px 0 30px;
+  }
+  
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Info Section */
+  .info {
+    bottom: -30px;
+  }
+  
+  .topbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .name {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+  
+  .info-items {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 60px 0 20px;
+  }
+  
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Phone (480px and below) */
+@media screen and (max-width: 480px) {
+  /* Header */
+  .header .container {
+    padding: 12px 15px;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  .logo img {
+    width: 22px;
+  }
+  
+  .logo span {
+    font-size: 9px;
+  }
+  
+  .navbar {
+    padding: 15px 0;
+  }
+  
+  /* Ensure navbar shows when checkbox is checked on phone */
+  .menu-checkbox:checked ~ .navbar {
+    display: flex !important;
+  }
+  
+  /* Alternative selector for better compatibility on phone */
+  #menu-toggle:checked ~ .navbar {
+    display: flex !important;
+  }
+  
+  /* Ensure menu icon is visible on phone */
+  .menu-icon {
+    display: block;
+  }
+  
+  .menu {
+    padding: 0 15px;
+  }
+  
+  .menu a {
+    padding: 12px 0;
+    font-size: 15px;
+  }
+  
+  /* Dropdown styles for phone - controlled by checkbox hack */
+  .dropdown-menu {
+    margin-left: 15px;
+    margin-top: 8px;
+    padding: 8px 0;
+  }
+  
+  .dropdown-menu a {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+  
+  /* Style dropdown toggle labels */
+  .dropdown-toggle {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 80vh;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-content .tagline {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .hero-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .hero-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+  
+  .hero-arrow-left {
+    left: 15px;
+  }
+  
+  .hero-arrow-right {
+    right: 15px;
+  }
+  
+  /* Services Section */
+  .services h1 {
+    font-size: 24px;
+  }
+  
+  .service {
+    padding: 20px;
+  }
+  
+  .service img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 40px 0;
+  }
+  
+  .text-content h2 {
+    font-size: 24px;
+  }
+  
+  .feature img {
+    width: 60px;
+    height: 45px;
+  }
+  
+  /* Experience Section */
+  .experience {
+    padding: 40px 0 80px 0;
+  }
+  
+  .experience h2 {
+    font-size: 24px;
+  }
+  
+  /* Stats Box */
+  .stats-box {
+    top: -30px;
+    margin: 0 15px;
+    padding: 15px;
+  }
+  
+  .stat {
+    min-width: 100px;
+    margin: 8px;
+  }
+  
+  .stat h3 {
+    font-size: 24px;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 0 20px 40px;
+  }
+  
+  .team-title {
+    font-size: 24px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    padding: 40px 0;
+  }
+  
+  .testimonials-title {
+    font-size: 24px;
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+  }
+  
+  /* Presentation */
+  .presentation {
+    padding: 30px 0;
+  }
+  
+  .presentation h2 {
+    font-size: 20px;
+  }
+  
+  .video-play-btn {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .play-icon {
+    font-size: 20px;
+  }
+  
+  /* News Section */
+  .news {
+    padding: 40px 0 20px;
+  }
+  
+  .news-title {
+    font-size: 24px;
+  }
+  
+  .news-card {
+    max-width: 100%;
+  }
+  
+  /* Info Section */
+  .info {
+    bottom: -20px;
+  }
+  
+  .name {
+    padding: 15px;
+  }
+  
+  .name h2 {
+    font-size: 16px;
+  }
+  
+  .info-item {
+    padding: 15px;
+    font-size: 12px;
+  }
+  
+  .info-item i {
+    padding: 15px;
+    font-size: 16px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 40px 0 20px;
+  }
+  
+  /* Container adjustments */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
